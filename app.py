@@ -21,7 +21,7 @@ import pickle
 import pandas as pd
 
 app = Flask(__name__)
-model = pickle.load(open("C:/Users/Administrator/Desktop/Devvrat/ModelDeployment/Azure/Randomforestmodel3/model.pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
 
 
 
