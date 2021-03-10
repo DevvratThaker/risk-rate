@@ -28,7 +28,7 @@ model = pickle.load(open("model.pkl", "rb"))
 @app.route("/")
 @cross_origin()
 def home():
-    return render_template("home.html")
+    return render_template("test_localserver1.html")
 
 
 
@@ -79,10 +79,10 @@ def predict():
         
         output=round(prediction[0],2)
 
-        return render_template('home.html',prediction_text="Your rate is. {}".format(output))
+        return render_template('test_localserver1.html',prediction_text="Your rate is. {}".format(output))
 
 
-    return render_template("home.html")
+    return render_template("test_localserver1.html")
 
 
 if __name__ == "__main__":
